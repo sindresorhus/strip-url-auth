@@ -1,6 +1,6 @@
 {
   "name": "strip-url-auth",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Strip the authentication part of a URL",
   "license": "MIT",
   "repository": "sindresorhus/strip-url-auth",
