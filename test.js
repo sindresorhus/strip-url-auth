@@ -1,13 +1,11 @@
-'use strict';
-var test = require('ava');
-var stripUrlAuth = require('./');
+import test from 'ava';
+import m from './';
 
-test(function (t) {
-	t.assert(stripUrlAuth('http://user:pass@sindresorhus.com') === 'http://sindresorhus.com');
-	t.assert(stripUrlAuth('https://user:pass@sindresorhus.com') === 'https://sindresorhus.com');
-	t.assert(stripUrlAuth('//user:pass@sindresorhus.com') === '//sindresorhus.com');
-	t.assert(stripUrlAuth('http://user@sindresorhus.com') === 'http://sindresorhus.com');
-	t.assert(stripUrlAuth('http://sindresorhus.com/@foo') === 'http://sindresorhus.com/@foo');
-	t.assert(stripUrlAuth('http://sindresorhus.com') === 'http://sindresorhus.com');
-	t.end();
+test(t => {
+	t.is(m('http://user:pass@sindresorhus.com'), 'http://sindresorhus.com');
+	t.is(m('https://user:pass@sindresorhus.com'), 'https://sindresorhus.com');
+	t.is(m('//user:pass@sindresorhus.com'), '//sindresorhus.com');
+	t.is(m('http://user@sindresorhus.com'), 'http://sindresorhus.com');
+	t.is(m('http://sindresorhus.com/@foo'), 'http://sindresorhus.com/@foo');
+	t.is(m('http://sindresorhus.com'), 'http://sindresorhus.com');
 });
