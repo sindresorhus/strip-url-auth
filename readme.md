@@ -13,7 +13,7 @@ $ npm install --save strip-url-auth
 ## Usage
 
 ```js
-var stripUrlAuth = require('strip-url-auth');
+const stripUrlAuth = require('strip-url-auth');
 
 stripUrlAuth('https://user:pass@sindresorhus.com');
 //=> 'https://sindresorhus.com'
@@ -22,4 +22,4 @@ stripUrlAuth('https://user:pass@sindresorhus.com');
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](https://sindresorhus.com)
