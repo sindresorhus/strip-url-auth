@@ -1,12 +1,12 @@
 # strip-url-auth [![Build Status](https://travis-ci.org/sindresorhus/strip-url-auth.svg?branch=master)](https://travis-ci.org/sindresorhus/strip-url-auth)
 
-> Strip the [authentication](http://en.wikipedia.org/wiki/Basic_access_authentication) part of a URL
+> Strip the [authentication](https://en.wikipedia.org/wiki/Basic_access_authentication) part of a URL
 
 
 ## Install
 
 ```
-$ npm install --save strip-url-auth
+$ npm install strip-url-auth
 ```
 
 

@@ -1,8 +1,8 @@
 'use strict';
-module.exports = function (str) {
-	if (typeof str !== 'string') {
+module.exports = input => {
+	if (typeof input !== 'string') {
 		throw new TypeError('Expected a string');
 	}
 
-	return str.replace(/^((?:\w+:)?\/\/)(?:[^@/]+@)/, '$1');
+	return input.replace(/^((?:\w+:)?\/\/)(?:[^@/]+@)/, '$1');
 };
