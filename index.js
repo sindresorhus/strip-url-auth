@@ -4,5 +4,5 @@ module.exports = function (str) {
 		throw new TypeError('Expected a string');
 	}
 
-	return str.replace(/^((?:\w+:)?\/\/)(?:[^@\/]+@)/, '$1');
+	return str.replace(/^((?:\w+:)?\/\/)(?:[^@/]+@)/, '$1');
 };
