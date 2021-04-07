@@ -1,8 +1,7 @@
-'use strict';
-module.exports = input => {
-	if (typeof input !== 'string') {
+export default function stripUrlAuth(string) {
+	if (typeof string !== 'string') {
 		throw new TypeError('Expected a string');
 	}
 
-	return input.replace(/^((?:\w+:)?\/\/)(?:[^@/]+@)/, '$1');
-};
+	return string.replace(/^((?:\w+:)?\/\/)[^@/]+@/, '$1');
+}
